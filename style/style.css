@@ -1,0 +1,32 @@
+#myTable {
+    font-family: "Arial", Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    
+  }
+
+#myTable td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#myTable tr:hover {background-color: #ddd;}
+
+#myTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:grey;
+    color: white;
+  }
+
+.log_on_btns, .addNewInputs{
+  display: inline;
+}
+
+#loader{
+  width: 150px;
+  height:150px;
+  align-content: center;
+  background-position: center;
+}

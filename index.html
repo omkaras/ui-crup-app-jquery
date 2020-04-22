@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Crud App</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js\app.js"></script>
+    <script src="js\JQueryService.js"></script>
+    <!-- <script src="js\AjaxService.js"></script> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="style/style.css">
+</head>
+<!-- <body onload="init();"> -->
+
+<body id="mainBody">
+
+    <div id="header">
+        <h3>Welcome to Crud App</h3>
+    </div>
+
+    <div class="log_on_btns">
+        <button onclick=notReady()>Login</button>
+        <button onclick=notReady()>Registration</button><br>
+    </div>
+    <br>
+    <div id="userInfo">
+
+        <div id="tableDiv">
+            <table id="myTable">
+                <tr>
+                    <th id="th_id">Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Address</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td id="td_id"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <th></th>
+                </tr>
+            </table>
+
+        </div>
+        <br>
+        <div id="newEntryDiv">
+            <div id="addNewBtnDiv">
+                <button id="addNew" onclick=showAddDetails()>Add new record</button>
+            </div> <br>
+            <div class="addNewInputs">
+                <input id="name" placeholder="Name"></input>
+                <input id="email" placeholder="Email"></input>
+                <input id="mobile" placeholder="Mobile"></input>
+                <input id="address" placeholder="Address"></input> <br> <br>
+                <button id="saveBtn" onclick=addRecord()>Save</button>
+            </div> <br><br>
+        </div>
+
+    </div>
+
+    <div id="loader">
+        <img id="loader" src="img/loader.gif"/>
+    </div>
+
+</body>
